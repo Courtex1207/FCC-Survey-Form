@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <title>FCC Survey Form</title>
+  <meta name="description" content="My FreeCodeCamp Submission for 'Survey Form'">
+  <meta name="author" content="Courtney Rhodes">
+  <link rel="stylesheet" href="styles.css"
+</head>
+
+<body>
+  <div class="custom">
+    <h1 id="title">Alpha Chi Rho </h1>
+    <p id="description"> Fraternity Interest Form </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label> <br>
+      <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+      <label id="email-label" for="email">Email:</label> <br>
+      <input type="email" id="email" name="email" placeholder="person@pace.edu" required><br><br>
+      <label id="number-label" for="age">Age:</label>
+      <input type="number" id="number" name="age" min="16" max="25" placeholder="20"><br><br>
+      <label id="dropdown-label" for="dropdown"> Class: </label>
+      <select id="dropdown">
+        <option value="freshman"> Freshman </option>
+        <option value="sophomore"> Sophomore </option>
+        <option value="freshman"> Junior </option>
+        <option value="sophomore"> Senior </option>
+      </select> <br>
+      <p> Do you have these traits? </p>
+      <input type="checkbox" id="trait1" name="trait1" value="Time">
+      <label for="trait1"> I have Time</label><br>
+      <input type="checkbox" id="trait2" name="trait2" value="Willpower">
+      <label for="trait2"> I have Willpower</label><br>
+      <input type="checkbox" id="trait3" name="trait3" value="Boat">
+      <label for="trait3"> I have Dedication</label><br>
+    <label for="A" id="gpa-label">Please submit your GPA:</label>
+    <input id="A"type="radio" name="gpa" value="A"> A (4.0)
+    <label for="B" id="gpa-label"></label>
+    <input id="B"type="radio" name="gpa" value="B"> B (3.0)
+    <label for="C" id="gpa-label"></label>
+    <input id="C"type="radio" name="gpa" value="C"> C (2.0)
+    <label for="D" id="gpa-label"></label>
+    <input id="D"type="radio" name="gpa" value="D"> D (1.0) and lower.
+
+  <br>
+
+    <label for="addcom" id="addcom-label"></label>
+    <textarea id="addcom" placeholder="Any additional comments ?">Would you like to leave a comment?
+    </textarea>
+    <br>
+    <button type="submit" id="submit">Submit </button>
+    </form>
+  </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+  </html>
